@@ -1,0 +1,228 @@
+
+.full-fackground{
+    background-image: url('./img/body-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    z-index: 1
+}
+
+.full-fackground::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+   opacity: .6;
+}
+
+.header-section{
+    background-color: #4e323261;
+    opacity: 1.5;
+    box-shadow: 0px 1px 20px #c1bcbc;
+}
+
+.header-section .header-logo img{
+    width: 202px;
+    margin-top: 12px;
+}
+.header-section .header-menu{
+    margin-top: 12px;
+}
+.header-section .header-menu ul{
+    text-align: end;
+}
+.header-section .header-menu ul li {
+    display: inline-block;
+    padding: 0px 15px;
+    line-height: 2;
+}
+.header-section .header-menu ul li  a{ 
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+/* dropdwon menu start */
+ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color: white ;
+    text-align: left !important;
+    padding: 0;
+    top: 60px;
+    box-shadow: 1px 2px 20px rgba(223, 228, 220, 0.856);
+    border-top: 5px solid rgb(190, 211, 107);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    
+}
+
+ul li ul li a{
+    color: rgb(0, 0, 0) !important;
+    padding: 10px 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 16px !important;
+}
+
+ul li ul li{
+    display: block !important;
+    /* margin: 10px 0px; */
+    padding: 10px 14px !important;
+}
+ul li ul li:hover{
+    background-color: rgb(206, 207, 207);
+    width: 100%;
+}
+
+i.fa-solid.fa-angle-down {
+    color: white;
+    padding: 0px 5px;
+}
+/* dropdwon menu end */
+
+.banner-section{
+    color: white;
+    padding: 150px 0px;
+}
+.banner-section h1{
+    font-size: 62px;
+    font-family: revert;
+    font-weight: 900;
+}
+
+.banner-section button{
+    background-color: orange !important;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    border-radius: 20px !important;
+}
+.banner-section button:hover{
+    background-color: rgb(255, 255, 255) !important;
+    
+}
+.services-section{
+    background-color: rgb(236, 232, 232);
+    padding: 85px 0px;
+}   
+
+
+.service1{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 45px 0px !important;
+}
+
+.service1:hover{
+    background-color: #c1bcbc97;
+    transition: .5s;
+}
+
+.service1:hover img{
+    transform: rotateY(360deg);
+    transition: .5s;
+}
+
+.service1:hover a{
+    background-color: white !important;
+    color: orange;
+    transition: .5s;
+}
+
+.service1 a{
+    background-color: rgb(159, 107, 9) !important;
+    border-style: none;
+}
+
+.service1 a:hover{
+    background-color: rgb(0, 0, 0) !important;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+    transform-origin: top bottom;
+}
+.about-section{
+    background-color: #ece8e8;
+    padding: 100px 0px;
+}
+
+.about-section .right-content{
+    padding: 0px 23px;
+    width: 97%;
+}
+
+.about-section .right-content .button{
+    padding: 15px 30px;
+    background-color: black;
+    border-style: none;
+}
+
+.about-section .right-content .button:hover{
+    background-color: orange;
+}
+
+/* .about-section .right-content i{
+    font-size: 35px;
+}
+.about-section .right-content span{
+    font-size: 20px;
+    position: relative;
+    top: -6px;
+    left: 10px;
+} */
+
+details{
+    margin-bottom: 20px;
+}
+.about-section .left-video iframe{
+    width: 80%;
+}
+.form-section{
+    color: rgb(0, 0, 0);
+    padding: 80px 40px;
+    background-image: url('./img/girl.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.form-section img{
+    height: 560px;
+    width: 100%;
+}
+
+.right-form{
+    width: 80%;
+    margin-left: 124px;
+}
+.footer-section i{
+    color: white;
+    font-size: 20px;
+    padding: 0px 15px;
+    text-align: end;
+}
+.footer-section p{
+    color: white;
+    line-height: 3;
+}
+
+.socile-icon{
+    text-align: end;
+    line-height: 3;
+}
+
+.footer-section{
+    height: 50px;
+    background-color: rgba(165, 160, 160, 0.491);
+}
